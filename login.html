@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="assets/css/login.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/components.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
 </head>
 <body class="login">
 <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
 <div class="menu-toggler sidebar-toggler">
 </div>
 <div class="logo">
-    <img src="assets/img/login-log.png"/>
+    <!--<img src="assets/img/login-log.png"/>-->
+    <h1 class="title">能耗系统</h1>
 </div>
 <div class="content">
     <!--login form-->
@@ -28,18 +30,29 @@
             <span>请输入用户名和密码</span>
         </div>
         <div class="form-group">
-            <label class="control-label">用户名</label>
-            <input class="form-control form-control-solid" type="text" autocomplete="off" placeholder="用户名" name="username" />
+            <!--<label class="control-label"></label>-->
+            <div class="input-icon">
+                <i class="fa fa-user"></i>
+                <input class="form-control" type="text" autocomplete="off" placeholder="用户名" name="username" />
+            </div>
         </div>
         <div class="form-group">
-            <label class="control-label"></label>
-            <input class="form-control form-control-solid" type="password" autocomplete="off" placeholder="密码" name="password" />
+            <!--<label class="control-label"></label>-->
+            <div class="input-icon">
+                <i class="fa fa-lock"></i>
+                <input class="form-control" type="password" autocomplete="off" placeholder="密码" name="password" />
+            </div>
+
         </div>
         <div class="form-actions">
-            <button type="submit" class="btn btn-success uppercase">登录</button>
-            <label class="rememberme check">
+            <label class="checkbox">
                 <input type="checkbox" name="remember" value="1"/>记住我
             </label>
+            <button type="submit" class="btn green-haze pull-right">
+                登录
+                <i class="m-icon-swapright m-icon-white"></i>
+            </button>
+
         </div>
     </form>
 </div>
